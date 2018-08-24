@@ -108,20 +108,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         let tvPlaneNode = SCNNode(geometry: tvPlane)
         
-        //var translation = matrix_identity_float4x4
-        //translation.columns.3.z = -1.0
+        var translation = matrix_identity_float4x4
+        translation.columns.3.z = -1.0
+        tvPlaneNode.simdTransform = matrix_multiply(currentFrame.camera.transform, translation) //translates the video 1 meter away
         
-        //tvPlaneNode.simdTransform = matrix_multiply(currentFrame.camera.transform, translation) //translates the video 1 meter away
-        //tvPlaneNode.position = SCNVector3(0, 0, -2)
-        guard let pointOfView = sceneView.pointOfView else {return}
-        let transform = pointOfView.transform
-        let orientation = SCNVector3(-transform.m31, -transform.m32, -transform.m33)
-        let location = SCNVector3(transform.m41, transform.m42, transform.m43)
-        let curPosCam = orientation + location
         
-        tvPlaneNode.position = curPosCam
-        
-        tvPlaneNode.eulerAngles = SCNVector3(Double.pi,0,0)   //to make the video not upside down
+        tvPlaneNode.eulerAngles = SCNVector3(-currentFrame.camera.eulerAngles.x, -currentFrame.camera.eulerAngles.y, Float.pi)
+        //changes the euler angles to reverse the z orientation of the video and face the video to the phone's camera using the negative current y and z euler angles
         
         self.sceneView.scene.rootNode.addChildNode(tvPlaneNode)
         

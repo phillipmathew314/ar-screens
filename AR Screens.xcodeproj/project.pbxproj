@@ -42,7 +42,7 @@
 		54AB557E212F86440030B772 = {
 			isa = PBXGroup;
 			children = (
-				54AB5589212F86440030B772 /* AR Screen */,
+				54AB5589212F86440030B772 /* AR Screens */,
 				54AB5588212F86440030B772 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +55,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		54AB5589212F86440030B772 /* AR Screen */ = {
+		54AB5589212F86440030B772 /* AR Screens */ = {
 			isa = PBXGroup;
 			children = (
 				54AB559F212F9B100030B772 /* SampleVideo_1280x720_1mb.mp4 */,
@@ -67,7 +67,7 @@
 				54AB5595212F86480030B772 /* LaunchScreen.storyboard */,
 				54AB5598212F86480030B772 /* Info.plist */,
 			);
-			path = "AR Screen";
+			path = "AR Screens";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,12 +290,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67PZ3FNXDC;
-				INFOPLIST_FILE = "Youtube Screen/Info.plist";
+				INFOPLIST_FILE = "AR Screens/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.phillip.Youtube-Screen";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.phillip.AR-Screens";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -308,12 +308,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67PZ3FNXDC;
-				INFOPLIST_FILE = "Youtube Screen/Info.plist";
+				INFOPLIST_FILE = "AR Screens/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.phillip.Youtube-Screen";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.phillip.AR-Screens";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
